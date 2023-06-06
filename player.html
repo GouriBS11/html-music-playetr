@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" style=" min-height: 100%;
+display: grid;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+   <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css?family=Questrial');">
+
+
+</head>
+<body style=" 
+background: linear-gradient(to bottom left, light 10%, secondary 80%);
+display: grid;
+overflow: hidden;
+background-color: dimgray;
+.clicked {
+  color: primary;
+  transform: scale(1.2);
+  transition: all .4s ease;
+  
+}">
+    
+    <div id="player" style="
+                            background: rgb(186, 206, 208);
+                            position: relative;
+                            margin: auto;
+                            width: 300px;
+                            height: 350px;
+                            overflow: hidden;
+                            border-radius: 5px;
+                            box-shadow: 5px 5px 15px rgba(dark, .4);
+                            -webkit-transition: all .5s ease-in-out;
+                            transition:all .5s ease-in-out;
+                            :hover {
+                                transform: scale(1.05);
+                            }">
+        <div class="album" style="  
+                            background: url(./images/track1.jfif);
+                            background-repeat: no-repeat;
+                            background-size: 300px;
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 5px;
+                            position: absolute;">
+         <div class="heart" style=" 
+                            position: absolute;
+                            right: 0;
+                            color: white;
+                            margin: 10px;
+                            transition: all .4s ease;"><i class="fas fa-heart"></i></div>
+        </div>
+        <div class="info" style="
+                            height: 130px;
+                            width: 100%;
+                            position: absolute;
+                            bottom:0;
+                            background: rgba(white, .85);
+                            transform: translateY(35px);
+                            transition: all .5s ease-in-out;">
+          <div class="progress-bar" style=" 
+                            height: 5px;
+                            width: 73%;
+                            margin:  1% auto;
+                            color: black;
+                            border-radius: 10px;
+                            font-family: font;">
+            <div class="time--current" style=" 
+                            color: dark;
+                            font-size: 10px;
+                            position: absolute;
+                            margin-top: -2px;
+                            left: 15px;">1:25</div>
+            <div class="time--total" style="
+                            color: dark;
+                            font-size: 10px;
+                            position: absolute;
+                            margin-top: -2px;
+                            right: 15px;" >-3:15</div>
+            <div class="fill" style="
+                            background-color:#535353;
+                            width: 35%;
+                            height: 0.3rem;
+                            border-radius: 2px;"></div>
+          </div>
+          <div class="currently-playing" style="
+                            text-align: center;
+                            margin-top: -3px;" >
+            <h2 class="song-name" style="
+                            font-family: font;
+                            text-transform: uppercase;
+                            margin: 10px;
+                            font-size: .8em;
+                            letter-spacing: 3px;
+                            color: dark;" >Flamingo</h2>
+            <h3 class="artist-name" style="
+                            font-family: font;
+                            text-transform: uppercase;
+                            margin: 0;
+                            font-size: .6em;
+                            letter-spacing: 1.5px;
+                            color: lighten(dark, 15%);
+                            margin-top: 5px;">Oliver Helder</h3>
+          </div>
+          <div class="controls" style="
+                            display: flex;
+                            align-items: center;
+                            font-size: 1em;
+                            justify-content: center;
+                            color: secondary;
+                            :hover {
+                            color: #535353;
+                            }">
+            <div class="option" style="
+                            left: 10px;
+                            position: absolute;
+                            font-size: .8em;
+                            transition: all .5s ease;
+                            &:hover {
+                                color: #535353;
+                            }" ><i class="fas fa-bars"></i></div>
+            <div class="volume" style="
+                            margin-right: 30px;
+                             font-size: .8em;
+                            transition: all .5s ease;
+                            &:hover {
+                                color: #535353;
+                            }"><i class="fas fa-volume-up"></i></div>
+            <div class="previous" style="
+                             margin-right: -80px;
+                            transition: all .5s ease;
+                            &:hover {
+                            color: #535353;
+                            }"><i class="fas fa-backward"></i></div>
+            <div class="play" style=" 
+                            
+                            margin: 5px 35px;
+                            margin-left: 0px;
+    color: darken(secondary, 10%);
+                            :hover {
+                                color: #535353;
+                            }" ><i class="fas fa-play"></i></div>
+            <!-- <div class="pause" style="
+                            margin: 15px 25px;
+                            color: darken(secondary, 10%);
+                            transition: all .5s ease;
+                            :hover {
+                                color: #535353;
+                            }" ><i class="fas fa-pause"></i></div> -->
+            <div class="next" style="
+                            margin-left: 150px;
+                            transition: all .5s ease;
+                            :hover {
+                                color: #535353;
+                            }"><i class="fas fa-forward"></i></div>
+            <div class="shuffle" style="
+                            margin-left: 30px;
+                            font-size: 1em;
+                            transition: all .5s ease;
+                            :hover {
+                                color: #535353;
+                            }"><i class="fas fa-random"></i></div>
+            <div class="add" style="
+                            right: 10px; 
+                            position: absolute;
+                            font-size: .8em;
+                            transition: all .5s ease;
+                            :hover {
+                                color: #535353;
+                            }"><i class="fas fa-plus"></i></div>
+          </div>
+        </div>
+      </div>
+      
+     
+   
+</body>
+</html>
